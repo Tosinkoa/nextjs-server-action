@@ -1,11 +1,4 @@
 import Form from "@/components/Form";
-import { revalidatePath } from "next/cache";
-
-interface IData {
-  id: string;
-  name: string;
-  email: string;
-}
 
 const Home = async () => {
   let data;

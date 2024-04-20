@@ -7,7 +7,7 @@ export const addUser = async (formData: FormData) => {
 
     const name = formData.get("name");
     const email = formData.get("email");
-    console.log("DATA TO SUBMIT:", name, email);
+
     await fetch((`${process.env.RETOOL_API}`), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
